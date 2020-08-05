@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.dimigo.javaFX.project.resultController">
+   <children>
+      <Label layoutX="47.0" layoutY="25.0" text="산 수용액의 부피는 몇 L입니까?">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="acidTextBox" layoutX="131.0" layoutY="82.0" prefHeight="37.0" prefWidth="218.0" />
+      <Label layoutX="356.0" layoutY="82.0" text="L">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="151.0" text="염기 수용액의 부피는 몇 L입니까?">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="basicTextBox" layoutX="136.0" layoutY="204.0" prefHeight="37.0" prefWidth="218.0" />
+      <Label layoutX="361.0" layoutY="204.0" text="L">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="NameField" layoutX="41.0" layoutY="371.0" prefHeight="37.0" prefWidth="178.0" text="NameField">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="217.0" layoutY="371.0" text="수용액의 몰 농도는">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="MolField" layoutX="91.0" layoutY="425.0" prefHeight="37.0" prefWidth="132.0" text="MolField" textAlignment="RIGHT">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="245.0" layoutY="425.0" text="M 입니다.">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="enterButton" layoutX="250.0" layoutY="265.0" mnemonicParsing="false" onAction="#enterAction" prefHeight="60.0" prefWidth="111.0" text="확인">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <Button fx:id="previousButton" layoutX="129.0" layoutY="265.0" mnemonicParsing="false" onAction="#handlePreviousAction" prefHeight="60.0" prefWidth="111.0" text="이전">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
